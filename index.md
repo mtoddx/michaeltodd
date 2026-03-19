@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## Latest Research & Posts
+## Latest Posts
 
 <ul class="post-list">
   {% for post in site.posts %}
