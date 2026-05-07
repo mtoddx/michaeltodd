@@ -34,7 +34,7 @@ In the reduced form, rows and columns that are multiplied by zero are removed, w
 - If $m > n$ then $U$ is $m \times n$ and $\Sigma$ is $n \times n$
 - If $n > m$ then $\Sigma$ is $m \times m$ and $V$ is $n \times m$
 
-## Proof
+## Proof Sketch
 
 Both $A^TA$ and $AA^T$ are symmetric matrices which means that they have real eigenvalues (if $A$ is real) and are diagonalisable. They are also positive semidefinite, which means that the eigenvalues are non-negative.
 
