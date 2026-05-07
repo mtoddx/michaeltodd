@@ -2,7 +2,6 @@ title: Michael Todd
 description: An old-school blog focusing on statistics, ML and AI.
 url: "https://michaeltodd.io"
 baseurl: ""
-youtube_channel: "https://youtube.com/@mtstats"
 
 # Build settings
 markdown: kramdown
@@ -13,3 +12,15 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO settings
+author: Michael Todd
+lang: en_US
+
+# Excerpt settings
+excerpt_separator: "\n\n"  # Auto-generate excerpts from first paragraph
+
+# Include files
+include:
+  - _pages

@@ -72,7 +72,7 @@ The rank $r$ and the four fundamental subspaces of $A$ define how these transfor
 - The first $r$ column vectors of $U$ span the column space $C(A)$ while the remaining $m-r$ columns span the left nullspace $N(A^T)$.
 - The first $r$ columns of $V$ span the row space $C(A^T)$ while the remaining $n-r$ columns span the nullspace $N(A)$.
 
-The change of basis accomplished by $A$ can be seen as squashing the basis vectors in the nullspace to zero, rotating/reflecting the basis vectors in the row space and then scaling them, and then rotating/reflecting them again into the column space. The left nullspace is the part of $\R^m$ that cannot be reached by the transformation $A$.
+The change of basis accomplished by $A$ can be seen as squashing the basis vectors in the nullspace to zero, rotating/reflecting the basis vectors in the row space and then scaling them, and then rotating/reflecting them again into the column space. The left nullspace is the part of $\mathbb{R}^m$ that cannot be reached by the transformation $A$.
 
 When the singular values and their corresponding singular vectors are ranked by magnitude, then the SVD provides an easy way to approximate the matrix $A$ in a lower dimensional form. This is done by truncating the singular values and singular vectors to only include the top $k$ (depending on the chosen rank of the approximation). According to the Eckart-Young theorem it is the optimal rank-$k$ approximation as measured by the Frobenius norm. Intuitively, this is a choice to compress $A$ into a subspace where it scales the basis vectors by the largest magnitude. Basis vectors that are shrunk by small singular values are ignored and grouped together with the nullspace.
 

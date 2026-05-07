@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+html {
+  background: var(--darker-bg);
+  min-height: 100%;
+}
+
 body {
   font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
   line-height: 1.6;
@@ -26,6 +31,7 @@ body {
   padding: 0;
   position: relative;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body::before {
@@ -520,4 +526,23 @@ li::marker {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, var(--neon-pink) 0%, var(--neon-purple) 100%);
   box-shadow: 0 0 15px rgba(255, 0, 110, 0.7);
+}
+
+/* Accessibility - Skip to main content link */
+.skip-to-main {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--neon-cyan);
+  color: var(--darker-bg);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9999;
+  border-radius: 0 0 4px 0;
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+.skip-to-main:focus {
+  top: 0;
 }
