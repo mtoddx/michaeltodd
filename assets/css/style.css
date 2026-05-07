@@ -54,7 +54,7 @@ body::before {
     linear-gradient(var(--slate) 1px, transparent 1px),
     linear-gradient(90deg, var(--slate) 1px, transparent 1px);
   background-size: 40px 40px;
-  opacity: 0.15;
+  opacity: 0.35;
   pointer-events: none;
   z-index: 0;
 }
@@ -141,7 +141,7 @@ body::before {
   color: var(--light-text);
   text-align: center;
   font-size: 0.9rem;
-  background: var(--white);
+  background: var(--bg-gray);
   position: relative;
   z-index: 2;
 }
@@ -358,7 +358,8 @@ tr:hover {
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
-  color: var(--accent-orange) !important;
+  color: var(--gunmetal) !important;
+  font-weight: 500;
 }
 
 /* Post content styling */
